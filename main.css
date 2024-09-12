@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow: hidden;
   }
 
 * {
@@ -9,12 +10,17 @@ html {
   font-family: "Onest", sans-serif;
 }
 
+body {
+    height: 100vh
+}
+
 .main {
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%)
 }
 
@@ -26,6 +32,7 @@ html {
     height: auto;
     z-index: -10;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .container {
@@ -116,6 +123,10 @@ h2 {
 }
 
 @media (max-width: 400px) and (min-width: 300px) {
+    .main {
+        width: 100%;
+        height: 100%;
+    }
     .container {
       width: 90vw;
     }
@@ -141,7 +152,7 @@ h2 {
         gap: 8px;
     }
     .bg {
-        height: 100%;
+        height: 100vh;
         width: auto;
         position: absolute;
         left: -50%;
