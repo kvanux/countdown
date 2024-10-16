@@ -156,6 +156,7 @@ h2 {
     }
     .row {
         gap: 8px;
+         font-size: 1.2rem;
     }
     .bg {
         height: 100vh;
