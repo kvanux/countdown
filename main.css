@@ -49,6 +49,12 @@ body {
     align-items: center;
     gap: 32px;
     align-self: stretch;
+    color: #FFFBF1;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    align-self: center;
 }
 
 .card {
