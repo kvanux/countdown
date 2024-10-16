@@ -28,4 +28,10 @@ var x = setInterval(function() {
 //     clearInterval(x);
 //     document.getElementById("demo").innerHTML = "NGHI GOI";
 //   }
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.querySelectorAll("card").remove();
+    document.querySelector("row").innerHTML = "Nghỉ gòi nhạu hoi";
+  }
 }, 1000);
